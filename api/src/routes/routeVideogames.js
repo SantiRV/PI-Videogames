@@ -6,7 +6,7 @@ const router = Router();
 const { API_KEY } = process.env;
 
 router.get('/',async (req, res) => {
-    const name = req.body.name;
+    const name = req.query.name;
     let allVideogames = await getAllVideogames();
     if (name) {
         let videogameName = await allVideogames.filter((game) => 

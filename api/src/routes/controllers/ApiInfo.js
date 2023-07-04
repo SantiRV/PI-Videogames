@@ -1,5 +1,5 @@
 const axios = require('axios');
-const { API_KEY } = process.env
+const { API_KEY } = process.env;
 
 const getApiInfo = async () => {
   var games = [];
