@@ -1,0 +1,73 @@
+.landingPage {
+  position: relative;
+}
+
+.video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+  .containerButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .button {
+    position: relative;
+    width: 200px;
+    height: 80px;
+    background-color: #030303;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .console-button::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translate(0, -50%);
+    width: 60px;
+    height: 60px;
+    background-color: #666;
+    border-radius: 50%;
+  }
+  
+  .button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translate(0, -50%);
+    width: 60px;
+    height: 60px;
+    background-color: #e0ae09e0;
+    border-radius: 50%;
+  }
+  
+  .button:hover {
+    transform: scale(1.1);
+  }
+  
+  .textButton {
+    display: inline-block;
+    vertical-align: middle;
+    color: #d8d0d0;
+    font-size: 16px;
+    margin-right: 40px;
+  }
+  
+  
+  
+  
