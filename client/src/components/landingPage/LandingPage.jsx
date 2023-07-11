@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import styles from "../landingPage/LandingPage.module.css";
 import videoFile from "../../assets/videos/videogamesVideo.mp4";
 
-export default function LandingPage() {
+export default function LandingPage() { 
     return (
         <div className={styles.landingPage}>
             <video className={styles.video} autoPlay loop muted>

@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { getVideogameDetail} from "../../redux/actions/index";
-//import styles
+import styles from "./Detail.module.css";
 import { Spinner } from "../spinner/Spinner";
 
 export default function Detail(props) {
@@ -14,21 +14,21 @@ export default function Detail(props) {
         dispatch(getVideogameDetail(id));
     }, [id, dispatch]);
 
-    return (
+    return ( 
         <div>
             <Link to={"/home"}>
-                <button className="">x</button>
+                <button className={styles.button}>x</button>
             </Link>
             {videogameDetail ? (
-                <div className="">
+                <div className={styles.detailsContiner}>
                     <img
-                    className=""
+                    className={styles.videogameImage}
                     src={videogameDetail.background_image ||
                     "https://m.media-amazon.com/images/I/611fcGzpVUL.jpg"}
                     alt="Not Found"
                     />
-                    <div className="">
-                        <p className="">
+                    <div className={styles.videogameDetail}>
+                        <p className={styles.firstItem}>
                             <strong>Title:</strong> {videogameDetail.name}
                         </p>
                         <p>
