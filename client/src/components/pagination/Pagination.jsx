@@ -1,4 +1,4 @@
-import styles from "./Pagination.moule.css";
+import styles from "./Pagination.module.css";
 
 export default function Pagination({
     videogamePerPage,
@@ -16,7 +16,7 @@ export default function Pagination({
             <ul className={styles.pagination}>
                 {pageNumber && pageNumber.map((number) =>  (
                     <li key={number} >
-                        <a className={styles.number} onClick={() => pagination(number)} href="number">
+                        <a className={styles.number} onClick={() => pagination(number)} >
                             {number}
                         </a>
                     </li>

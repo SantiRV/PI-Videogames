@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { getVideogameDetail } from "../../redux/actions/index";
-import styles from "./Detail.module.css";
+import styles from "../detail/Detail.module.css";
 import { Spinner } from "../spinner/Spinner";
 
 export default function Detail(props) {

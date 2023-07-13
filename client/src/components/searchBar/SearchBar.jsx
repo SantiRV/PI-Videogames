@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { getNameVideogames } from "../../redux/actions";
+import { getNameVideogame } from "../../redux/actions";
 import { FaSearch } from "react-icons/fa";
 import styles from "./SearchBar.module.css";
 
@@ -15,7 +15,7 @@ export default function SearchBar() {
 
     function handleSubmit(e) {
         e.preventDefault();
-        dispatch(getNameVideogames(name));
+        dispatch(getNameVideogame(name));
         setName("");
     };
 
