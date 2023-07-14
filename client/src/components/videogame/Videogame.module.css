@@ -1,0 +1,42 @@
+.videogame {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .videogame img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .videogame .content {
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+  
+  .videogame a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  .videogame a:hover {
+    color: #ff6f00;
+  }
+  
+  .videogame .title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .videogame .genres,
+  .videogame .rating,
+  .videogame .platforms {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 5px;
+  }
+  

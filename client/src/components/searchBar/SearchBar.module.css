@@ -1,0 +1,35 @@
+/* Estilos para el componente SearchBar */
+.searchContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .searchBox {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .searchInput {
+    border: none;
+    padding: 5px;
+    width: 200px;
+  }
+  
+  .searchButton {
+    border: none;
+    background-color: transparent;
+    color: #888;
+    padding: 5px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .searchButton:hover {
+    color: #333;
+  }
+  

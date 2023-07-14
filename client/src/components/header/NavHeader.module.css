@@ -1,0 +1,39 @@
+/* Estilos para el componente NavHeader */
+.navBarHead {
+    background-color: #333;
+    padding: 10px;
+  }
+  
+  .navHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+  }
+  
+  .navLink {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .navLink:hover {
+    color: #ff6f00;
+  }
+  
+  .button {
+    border: none;
+    background-color: #ff6f00;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
