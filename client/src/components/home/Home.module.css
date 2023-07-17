@@ -1,99 +1,96 @@
 body {
-    margin: 0;
-    padding: 0;
-    background-image: url("../../assets/photos/vgphoto1.jpg");
-    background-size: cover;
-    background-position: center;
-    font-family: Arial, sans-serif;
-  }
+  margin: 0;
+  padding: 0;
+  background-image: url("../../assets/photos/vgphoto1.jpg");
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+}
 
-  .Home {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 40px;
-  }
-  
-  .Header {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  .SearchBar {
-    margin-bottom: 20px;
-  }
-  
-  .mainContainer {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-  }
-  
-  .sideBar {
-    width: 200px;
-    margin-right: 20px;
-  }
-  
+.Home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
 
-/* Estilos para la card grid */
+.Header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px; /* Disminuimos el espacio inferior en el encabezado */
+  margin-top: 30px; /* Agregamos espacio superior en el encabezado */
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 30px; /* Aumentamos el espacio superior en el contenedor principal */
+}
+
+.sideBar {
+  width: 220px; /* Aumentamos el ancho de la barra lateral */
+  margin-right: 30px; /* Aumentamos el espacio derecho entre la barra lateral y la grilla de cards */
+}
+
+/* Resto de los estilos para la card grid */
 .videogameGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .videogameGrid li {
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease;
-  }
-  
-  .videogameGrid li:hover {
-    transform: scale(1.05);
-  }
-  
-  /* Resto de los estilos para la card dentro de la grid */
-  .videogameGrid li img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-  
-  .videogameGrid li .content {
-    padding: 20px;
-    background-color: #f5f5f5;
-  }
-  
-  .videogameGrid li a {
-    text-decoration: none;
-    color: #333;
-    transition: color 0.3s ease;
-  }
-  
-  .videogameGrid li a:hover {
-    color: #ff6f00;
-  }
-  
-  .videogameGrid li .title {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-  
-  .videogameGrid li .genres,
-  .videogameGrid li .rating,
-  .videogameGrid li .platforms {
-    font-size: 14px;
-    color: #888;
-    margin-bottom: 5px;
-  }
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px; /* Aumentamos el espacio entre las cards */
+  list-style-type: none;
+  padding: 0;
+}
 
-  .Pagination {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  
+/* Resto de los estilos para la card dentro de la grid */
+.videogameGrid li {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.videogameGrid li:hover {
+  transform: scale(1.05);
+}
+
+.videogameGrid li img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.videogameGrid li .content {
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.videogameGrid li a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.videogameGrid li a:hover {
+  color: #ff6f00;
+}
+
+.videogameGrid li .title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.videogameGrid li .genres,
+.videogameGrid li .rating,
+.videogameGrid li .platforms {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 5px;
+}
+
+.Pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px; /* Aumentamos el espacio superior en la paginación */
+  margin-bottom: 30px;
+}

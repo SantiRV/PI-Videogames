@@ -12,7 +12,6 @@ import {
     resetVideogameDetail
  } from "../../redux/actions/index";
 import Videogame from "../videogame/Videogame";
-import SearchBar from "../searchBar/SearchBar";
 import Header from "../header/Header";
 import NavBar from "../navBar/NavBar";
 import Pagination from "../pagination/Pagination";
@@ -73,12 +72,6 @@ export default function Home() {
         <div>
             <Header title="New and trending" />
             <div>
-                <SearchBar />
-                <Pagination
-                videogamePerPage={videogamesPerPage}
-                allVideogames={allVideogames.length}
-                pagination={pagination}
-                />
                 <div className={styles.mainContainer}>
                     <div className={styles.sideBar}>
                         <NavBar
