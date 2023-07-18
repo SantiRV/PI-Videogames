@@ -9,7 +9,7 @@ import {
 //Me  traigo los games del back
 export function getVideogames() {
     return async function (dispatch) {
-        let videogamesData = await axios.get('https://pi-videogames-amber-zeta.vercel.app/videogame', {}
+        let videogamesData = await axios.get('http://localhost:3001/videogame', {}
         );
         return dispatch({
             type: "GET_VIDEOGAMES",
@@ -21,7 +21,7 @@ export function getVideogames() {
 export function getNameVideogame(name) {
     return async function (dispatch) {
         try {
-            let nameData = await axios.get('https://pi-videogames-amber-zeta.vercel.app/videogame?name=' + name);
+            let nameData = await axios.get('http://localhost:3001/videogame?name=' + name);
             return dispatch({
                 type: "GET_NAME_VIDEOGAME",
                 payload: nameData.data,
@@ -34,7 +34,7 @@ export function getNameVideogame(name) {
 
 export function getVideogameDetail(id) {
     return async function (dispatch) {
-        const response = await axios.get(`https://pi-videogames-amber-zeta.vercel.app/videogame/${id}`);
+        const response = await axios.get(`http://localhost:3001/videogame/${id}`);
         dispatch({
             type: "GET_VIDEOGAME_DETAIL",
             payload: response.data
@@ -44,7 +44,7 @@ export function getVideogameDetail(id) {
 
 export function getGenres() {
     return async function (dispatch) {
-        let genres = await axios.get('https://pi-videogames-amber-zeta.vercel.app/genre');
+        let genres = await axios.get('http://localhost:3001/genre');
         return dispatch({
             type: "GET_GENRES",
             payload: genres.data,
@@ -54,7 +54,7 @@ export function getGenres() {
 
 export function postVideogames(payload) {
     return async function (dispatch) {
-        const data = await axios.get('https://pi-videogames-amber-zeta.vercel.app/videogame', payload);
+        const data = await axios.get('http://localhost:3001/videogame', payload);
         return data
     };
 };
@@ -96,7 +96,7 @@ export function orderByRating(payload) {
 
 export function getPlatforms() {
     return async function (dispatch) {
-        const json = await axios.get('https://pi-videogames-amber-zeta.vercel.app/platforms');
+        const json = await axios.get('http://localhost:3001/platforms');
         return dispatch({
             type: "GET_PLATFORMS",
             payload: json.data
@@ -106,7 +106,7 @@ export function getPlatforms() {
 
 export function getFilterByPlatforms(id) {
     return async function (dispatch) {
-        const platformData = await axios.get(`https://pi-videogames-amber-zeta.vercel.app/platforms/${id}`);
+        const platformData = await axios.get(`http://localhost:3001/platforms/${id}`);
         return dispatch({
             type: FILTER_BY_PLATFORM,
             payload: platformData.data
@@ -116,7 +116,7 @@ export function getFilterByPlatforms(id) {
 
 export function getFiltersByGenres(name) {
     return async function (dispatch) {
-        const genreData = await axios.get(`https://pi-videogames-amber-zeta.vercel.app/genre/${name}`);
+        const genreData = await axios.get(`http://localhost:3001/genre/${name}`);
         return dispatch({
             type: FILTER_BY_GENRE,
             payload: genreData.data
